@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+:root{
+    --purple:#45CBD2;
+}
+.addy{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.country{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-left: 2px solid gray;
+    padding: 0 10px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    height: 56px;
+}
+header .toggle-menu{
+    display: none;
+}
+header i{
+    color: gray;
+    position: relative;
+}
+.content{
+    border-bottom: 1px solid #F1F1F1;
+}
+.content .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: gray;
+}
+.content i {
+    color: gray;
+}
+.mediacount{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    font-weight: 500;
+}
+header .content2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+}
+.search a{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 5px;
+}
+header nav li :hover{
+    transition: all 0.3s ease;
+    color: var(--purple);
+    font-weight: 700;
+}
+header .dashboardUser{
+    display: flex;
+    gap: 10px;
+}
+header .dashboardUser p{
+    text-align: end;
+    color: gray;
+}
+header .dashImg img{
+    width: 40px;
+    border-radius: 50%;
+}
+main{
+    background-image: url(/asset/Fotografia\ \ Empreendedora.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .container{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+main h1{
+    width: 400px;
+    font-size: 42px;
+}
+main p{
+    width: 450px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main .main-text{
+    margin-top: 100px;
+}
+main a{
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.contact i{
+    font-size: 42px;
+    color: var(--purple);
+}
+.contact{
+    background-color: #F8F8F8;
+    height: 100px;
+    padding: 20px 0;
+}
+.contact .book{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.contact p{
+    color: gray;
+}
+section .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    flex-wrap: wrap;
+}
+section .text{
+    flex: 1 2 300px;
+}
+section .imgg{
+    flex: 1 2 200px;
+}
+section h2{
+    margin-bottom: 30px;
+}
+section p{
+    margin-bottom: 20px;
+    width: 500px;
+    color: gray;
+}
+section .p1{
+    font-size: 18px;
+    color: black;
+}
+section h4{
+    margin-bottom: 20px;
+    color: var(--purple);
+}
+section .sign{
+    color: black;
+    font-size: 36px;
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main-services{
+    background-color: #F1F1F1;
+    padding: 30px 0 20px 0;
+}
+.main-services .skin{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    gap: 1px;
+}
+.main-services .big-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.main-services .body{
+    background-color: white;
+    border-radius: 3px;
+    height: 300px;
+    padding: 30px;
+}
+.main-services a{
+    text-decoration: underline;
+}
+.main-services h3{
+    margin-bottom: 5px;
+}
+.main-services p{
+    color: gray;
+}
+#b1{
+    border: none;
+}
+.content3{
+    margin-top: 50px;
+}
+.content3 .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.content3 .imggs{
+    width: 60%;
+    display: flex;
+}
+.content3 .imggs img{
+    width: 350px;
+}
+.content3 .txt{
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: 30px 0px 30px 20px;
+    border-radius: 3px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+.content3 h2{
+    margin-bottom: 30px;
+}
+.content3 p{
+    margin-bottom: 20px;
+    width: 300px;
+}
+.content3 .txt a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--purple);
+    text-align: center;
+    border-radius: 3px;
+    width: 300px;
+}
+.cases .big-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.cases a{
+    text-decoration: underline;
+}
+.cases .cases-img{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 35px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.cases .cases-img img{
+    width: 100%;
+}
+.cases p{
+    color: gray;
+}
+.cases h4{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.testimonials .big-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.testimonials{
+    background-color: #F1F1F1;
+}
+.testimonials a{
+    text-decoration: underline;
+}
+.testimonials .clients{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.testimonials .client1{
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+.testimonials .client1 p{
+    width: 250px;
+    color: gray;
+}
+.testimonials .cl-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.testimonials .clName h4{
+    margin: 5px 0;
+}
+.price .cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.price i{
+    color: var(--purple);
+    font-size: 36px;
+}
+.price .big-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.price .icon-imgs{
+    text-align: center;
+    background-color: #F1F1F1;
+    margin-bottom: 15px;
+    color: var(--purple);
+    height: 100px;
+    padding: 15px;
+}
+.price .cont1{
+    text-align: center;
+    border: 1px solid #F1F1F1;
+}
+.price p{
+    margin-bottom: 10px;
+}
+.price .cont1 a{
+    display: inline-block;
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+    margin: 15px 0 20px 0;
+}
+.price .big-txt a{
+    text-decoration: underline;
+}
+.content5 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.content5{
+    background-color: var(--purple);
+    margin: 30px 0;
+    /* height: 200px; */
+}
+.content5 a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+.content5 .big-txt{
+    color: white;
+}
+.content5 h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.topFooter .container{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.topFooter .loca{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.topFooter .abtUs-icon{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.topFooter h3{
+    margin-bottom: 10px;
+    color: black;
+}
+.topFooter .abtUs-icon button{
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+}
+.topFooter .abtUs-icon i{
+    font-size: 20px;
+    color: gray;
+}
+.topFooter .quicklinks{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.topFooter .quicklinks a{
+    color: gray;
+}
+.topFooter .quicklinks p{
+    margin-bottom: 5px;
+}
+.topFooter .links p{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.topFooter .links input{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    border: none;
+    background-color: #F1F1F1;
+}
+.topFooter .links button{
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.downFooter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.downFooter{
+    border-top: 1px solid #F1F1F1;
+    padding: 30px;
+}
+.downFooter .sec2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.departments .departs{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+}
+.departments .psyText{
+    padding: 0 20px;
+}
+.departments .deImg img{
+    border-radius: 3px;
+}
+.departments .psyText h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.departments .psyText p{
+    margin-bottom: 10px;
+    color: gray;
+}
+.departments .psyText a{
+    color: var(--purple);   
+}
+.departments .psychiatry{
+    margin-bottom: 20px;
+}
+.departments h2{
+    margin: 50px 0;
+}
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset2/06513b8a-c4d6-4fe3-8e05-ee7527576489.jpeg);
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.signin form{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.signin form label{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.signin form h1{
+    text-align: center;
+    color: var(--purple);
+    margin: 5px 0;
+}
+.signin form input{
+    width: 100%;
+    padding: 5px ;
+    margin-bottom: 5px;
+}
+.signin form .forgot{
+    text-align: end;
+    margin-bottom: 10px;
+}
+.signin form .signup{
+    text-align: center;
+}
+.signin form a{
+    text-decoration: underline;
+    color: var(--purple);
+}
+.signin form button{
+    padding: 8px 20px;
+    background-color: var(--purple);
+    color:  white;
+    border:  none;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.signUP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/asset2/06513b8a-c4d6-4fe3-8e05-ee7527576489.jpeg);
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.signUP form{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.signUP form h1{
+    text-align: center;
+}
+.signUP form label{
+    display: block;
+}
+.signUP form input{
+    width: 100%;
+    padding: 5px;
+}
+.signUP p{
+    margin: 5px 0;
+}
+.signUP button{
+    width: 100%;
+    background-color: var(--purple);
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0;
+    color: white;
+}
+.bookContainer{
+    background-image: url(/asset2/slide-3.jpeg);
+    height: calc(100vh - 80px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bookContainer form{
+    background-color: var(--purple);
+    border-radius: 3px;
+    color: white;
+    width: 400px;
+    border: none;
+}
+.booking1{
+    padding: 30px;
+}
+.bookForm{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 2fr);
+    margin-bottom: 10px;
+}
+.bookContainer .bookForm input{
+    width: 100%;
+    padding: 10px 5px 20px;
+}
+.bookContainer input{
+    width: 100%;
+    padding: 10px 0 50px 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: #d9c3e6;
+}
+#question{
+    margin-top: 10px;
+    /* padding: 20px; */
+}
+.booking1 h3{
+    margin-bottom: 30px;
+}
+.booking1 button{
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color: var(--purple);
+}
+.scrollToTop{
+    background-color: var(--purple);
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}
+.scrollToTop i{
+    font-size: 24px;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.conContainer{
+    width: 100%;
+    position: relative;
+}
+.navigate{
+    position: fixed;
+    width: 300px;
+    background-color: var(--purple);
+    height: 100%;
+    border-radius: 0px 30px;
+}
+.navigate ul{
+    padding: 8px 0 0 20px;
+}
+.navigate ul li{
+    list-style: none;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.navigate a{
+    color: white;
+}
+.navigate ul li:hover, a:hover{
+    background-color: white;
+    display: inline-block;
+    color: var(--purple);
+    border-radius: 12px;
+}
+.navigate .icons{
+    text-align: center;
+    font-size: 22px;
+}
+.main{
+    width: calc(100% - 300px);
+    left: 300px;
+    position: sticky;
+    padding: 20px;
+    background-color: #F1F1F1;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.header{
+    position: sticky;
+    top: 0;
+}
+.mainTxt{
+    display: flex;
+    align-items: center;
+    color: var(--purple);
+}
+.mainTxt h3{
+    color: #359ba1;
+}
+.dashBoardTable{
+    margin-top: 20px;
+    background-color: white;
+    padding: 20;
+    border-radius: 10px;
+    width: 100%;
+    overflow: auto;
+}
+.dashBoardTable .appDashb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+table{
+    width: 100%;
+}
+.searchHere{
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+.searchHere i{
+    display: inline-block;
+    background-color: var(--purple);
+    color: white;
+    padding: 5px;
+}
+table img{
+    width: 30px;
+    border-radius: 50%;
+}
+.nameImg{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+table tr{
+    border-bottom: 1px solid black;
+}
+table tr td{
+    padding: 10px;
+}
+table .mobile{
+    color: #45CBD2;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.mobile:hover{
+    color: blue;
+}
+.appointmentBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 241, 241);
+}
+.book-appointment{
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.patientBooking h1{
+    margin-bottom: 10px;
+}
+.patientBooking p{
+    margin-bottom: 5px;
+}
+.book-appointment label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.book-appointment .inputName{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.book-appointment input{
+    width: 100%;
+    padding: 7px;
+}
+.inputName p{
+    color: gray;
+    margin-bottom: 5px;
+}
+.book-appointment textarea{
+    width: 100%;
+    padding: 20px;
+}
+.emaill p{
+    color: gray;
+    margin-bottom: 5px;
+}
+.phoneNumber p{
+    color: gray;
+    margin-bottom: 5px;
+}
+.dateOfBirth{
+    margin-bottom: 5px;
+}
+.appointDate{
+    margin-bottom: 5px;
+}
+.book-appointment button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.book-appointment a{
+    display: flex;
+    justify-content: end;
+    color: blue;
+    margin-top: 5px;
+}
