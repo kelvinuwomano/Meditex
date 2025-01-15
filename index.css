@@ -836,3 +836,18 @@ table .mobile{
     color: blue;
     margin-top: 5px;
 }
+#error{
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials .clients{
+        grid-template-columns: repeat(1, 1fr);
+        }
+}
+
+@media screen and (max-width: 575px){
+    .testimonials .clients{
+        gap: 10px;
+    }
+}

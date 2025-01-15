@@ -36,20 +36,22 @@
             <p>Login to enjoy our best features and medical care</p>
             <div class="uName">
                 <label for="username">Username:</label>
-                <input type="text" placeholder="Enter Your Username">
+                <input type="text" placeholder="Enter Your Username" id="loginUname">
             </div>
             <div class="eMail">
                 <label for="email">Email:</label>
-                <input type="email" required placeholder="Enter Your email">
+                <input type="email" required placeholder="Enter Your email" id="loginEmail">
             </div>
             <div class="password">
                 <label for="password">Password:</label>
-                <input type="password" placeholder="Enter Your Password">
+                <input type="password" placeholder="Enter Your Password" id="loginPassword">
             </div>
-            <button type="submit">SIGN IN</button>
+            <p id="error"></p>
+            <button type="submit" onclick="login()">SIGN IN</button>
             <p class="forgot">Forgot password? <a href="#">Click here</a></p>
             <p class="signup">Don't have an account? <a href="/nextpg/signup.html">Sign up</a></p>
         </form>
     </div>
+    <script src="/index.js"></script>
 </body>
 </html>
