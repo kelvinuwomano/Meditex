@@ -169,10 +169,10 @@ section .container{
     flex-wrap: wrap;
 }
 section .text{
-    flex: 1 2 300px;
+    flex: 1  200px;
 }
 section .imgg{
-    flex: 1 2 200px;
+    flex: 1 1 300px;
 }
 section h2{
     margin-bottom: 30px;
@@ -240,10 +240,12 @@ section .sign{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .content3 .imggs{
     width: 60%;
     display: flex;
+    flex: 1 1 200px;
 }
 .content3 .imggs img{
     width: 350px;
@@ -254,6 +256,7 @@ section .sign{
     padding: 30px 0px 30px 20px;
     border-radius: 3px;
     margin: 0 auto;
+    flex: 1 1 300px;
     /* text-align: center; */
 }
 .content3 h2{
@@ -839,15 +842,55 @@ table .mobile{
 #error{
     color: red;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
+    header .toggle-menu{
+    display: block;
+    }
+    header ul{
+        display: none;
+        gap: 20px;
+    }
+    .price .cont{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 10px;
+    }
     .testimonials .clients{
         grid-template-columns: repeat(1, 1fr);
-        }
-}
-
-@media screen and (max-width: 575px){
-    .testimonials .clients{
+    }
+    .topFooter .container{
+       flex-wrap: wrap;
+       gap: 30px;
+    }
+    .downFooter .container{
+        flex-wrap: wrap-reverse;
         gap: 10px;
+    }
+    .content5 .container{
+        flex-wrap: wrap;
+    }
+    .content3 .imggs img{
+        width: 197px;
+    }
+    .contact .container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .main-services .skin{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+    }
+    section .container img{
+        width: 300px;
+    }
+    section .text h2{
+        width: 300px;
+    }
+    section .text p{
+        width: 300px;
+    }
+    .departments .departs{
+        display: grid;
+        grid-template-columns: repeat(1,6fr);
     }
 }

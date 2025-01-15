@@ -41,4 +41,3 @@ function login() {
         document.getElementById("error").textContent = "Fill in your details correctly"
     }
 }
-
