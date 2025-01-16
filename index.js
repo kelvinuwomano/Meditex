@@ -15,8 +15,11 @@ scrollTop.addEventListener("click", () => {
 
 const menuBar = document.getElementById("toggleMenu")
 const navMenu = document.getElementById("navMenu")
-menuBar.addEventListener("click", () =>{
+const search = document.getElementById('search')
+menuBar.addEventListener("click", () => {
     navMenu.classList.toggle("show")
+    search.style.toggle('show')
+    
 })
 function signUp() {
     
