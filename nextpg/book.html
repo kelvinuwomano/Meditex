@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Appointment</title>
-    <link rel="stylesheet" href="/index.css">
-</head>
-<body class="appointmentBody">
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="appointmentBody">
     <div class="book-appointment">
-        <div class="patientBooking">
-            <h1>Patient Booking Form</h1>
-            <p>Please fill out the form to book an appointment</p>
+      <div class="patientBooking">
+        <h1>Patient Booking Form</h1>
+        <p>Please fill out the form to book an appointment</p>
+      </div>
+      <form action="#">
+        <p>Patient Information:</p>
+        <div class="fullNamee">
+          <label for="fullName">Full name</label>
+          <div class="inputName">
+            <div class="firstNamee">
+              <input type="text" id="firstName" />
+              <p>First Name</p>
+            </div>
+            <div class="lastNamee">
+              <input type="text" id="lastName" />
+              <p>Last Name</p>
+            </div>
+          </div>
         </div>
-        <form action="#">
-            <p>Patient Information:</p>
-            <div class="fullNamee">
-                <label for="fullName">Full name</label>
-                <div class="inputName">
-                    <div class="firstNamee">
-                        <input type="text">
-                        <p>First Name</p>
-                    </div>
-                    <div class="lastNamee">
-                        <input type="text">
-                        <p>Last Name</p>
-                    </div>
-                </div>
-            </div>
-            <div class="emaill">
-                <label for="email">Email</label>
-                <input type="email" required>
-                <p>example@example.com</p>
-            </div>
-            <div class="phoneNumber">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="number" placeholder="(000) 000-0000">
-                <p>Please enter a valid phone number</p>
-            </div>
-            <div class="dateOfBirth">
-                <label for="date">Date Of Birth</label>
-                <input type="date">
-            </div>
-            <div class="appointDate">
-                <label for="appointDate">Preferred Date and Time</label>
-                <input type="datetime-local">
-            </div>
-            <div class="reason">
-                <label for="reason">Reason for Visit</label>
-                <textarea name="reason"></textarea>
-            </div>
-            <div class="allergy">
-                <label for="allergy">Do you have any allergies</label>
-                <textarea name="allergy"></textarea>
-            </div>
-            <div class="history">
-                <label for="history">Medical History</label>
-                <textarea name="history"></textarea>
-            </div>
-            <div class="insurance">
-                <label for="insurance">Insurance Information</label>
-                <textarea name="insurance"></textarea>
-            </div>
-            <button type="submit">BOOK APPOINTMENT</button>
-        </form>
-        <a href="/index.html">BACK TO HOME</a>
+        <div class="emaill">
+          <label for="email">Email</label>
+          <input type="email" required id="bookingEmail" />
+          <p>example@example.com</p>
+        </div>
+
+        <div class="phoneNumber">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="number" 
+          placeholder="(000) 000-0000" 
+          id="phoneInput"
+          />
+          <p>Please enter a valid phone number</p>
+        </div>
+
+        <div class="dateOfBirth">
+          <label for="date">Date Of Birth</label>
+          <input type="date" 
+          />
+        </div>
+        <div class="appointDate">
+          <label for="appointDate">Preferred Date and Time</label>
+          <input type="datetime-local" 
+          id="date"
+
+          />
+        </div>
+        <div class="reason">
+          <label for="reason">Reason for Visit</label>
+          <textarea name="reason"
+          id="reason"
+          ></textarea>
+        </div>
+        <div class="allergy">
+          <label for="allergy">Do you have any allergies</label>
+          <textarea name="allergy"></textarea>
+        </div>
+        <div class="history">
+          <label for="history">Medical History</label>
+          <textarea name="history"></textarea>
+        </div>
+        <div class="insurance">
+          <label for="insurance">Insurance Information</label>
+          <textarea name="insurance"></textarea>
+        </div>
+        <button type="submit">BOOK APPOINTMENT</button>
+      </form>
+      <a href="/index.html" onclick="login()">BACK TO HOME</a>
     </div>
-    
-</body>
+  </body>
 </html>
