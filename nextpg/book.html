@@ -12,10 +12,10 @@
         <h1>Patient Booking Form</h1>
         <p>Please fill out the form to book an appointment</p>
       </div>
-      <form action="#">
+      <form >
         <p>Patient Information:</p>
         <div class="fullNamee">
-          <label for="fullName">Full name</label>
+          <label >Full name</label>
           <div class="inputName">
             <div class="firstNamee">
               <input type="text" id="firstName" />
@@ -28,53 +28,47 @@
           </div>
         </div>
         <div class="emaill">
-          <label for="email">Email</label>
+          <label>Email</label>
           <input type="email" required id="bookingEmail" />
           <p>example@example.com</p>
         </div>
 
         <div class="phoneNumber">
-          <label for="phoneNumber">Phone Number</label>
-          <input type="number" 
-          placeholder="(000) 000-0000" 
-          id="phoneInput"
-          />
+          <label >Phone Number</label>
+          <input type="number" placeholder="(000) 000-0000" id="phoneInput" />
           <p>Please enter a valid phone number</p>
         </div>
 
         <div class="dateOfBirth">
-          <label for="date">Date Of Birth</label>
-          <input type="date" 
-          />
+          <label>Date Of Birth</label>
+          <input type="date" />
         </div>
         <div class="appointDate">
-          <label for="appointDate">Preferred Date and Time</label>
-          <input type="datetime-local" 
-          id="date"
-
-          />
+          <label >Preferred Date and Time</label>
+          <input type="datetime-local" id="date" />
         </div>
         <div class="reason">
-          <label for="reason">Reason for Visit</label>
-          <textarea name="reason"
-          id="reason"
-          ></textarea>
+          <label >Reason for Visit</label>
+          <textarea name="reason" id="reason"></textarea>
         </div>
         <div class="allergy">
-          <label for="allergy">Do you have any allergies</label>
+          <label >Do you have any allergies</label>
           <textarea name="allergy"></textarea>
         </div>
         <div class="history">
-          <label for="history">Medical History</label>
+          <label >Medical History</label>
           <textarea name="history"></textarea>
         </div>
         <div class="insurance">
-          <label for="insurance">Insurance Information</label>
+          <label>Insurance Information</label>
           <textarea name="insurance"></textarea>
         </div>
-        <button type="submit">BOOK APPOINTMENT</button>
+        <button type="submit" onclick="bookAppointment()">
+          BOOK APPOINTMENT
+        </button>
       </form>
-      <a href="/index.html" onclick="login()">BACK TO HOME</a>
+      <a href="/index.html">BACK TO HOME</a>
     </div>
+  <script src="/index.js"></script>  
   </body>
 </html>

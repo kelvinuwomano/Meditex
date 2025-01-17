@@ -20,8 +20,7 @@ menuBar.addEventListener("click", () => {
   navMenu.classList.toggle("show");
   search.style.toggle("show");
 });
-function signUp(e) {
-  e.preventDefault();
+function signUp() {
 
   const userName = document.getElementById("signupUname").value;
   const email = document.getElementById("signupEmail").value;
@@ -30,15 +29,14 @@ function signUp(e) {
   const userData = { userName, email, password };
   localStorage.setItem("user", JSON.stringify(userData));
   if (userData) {
-    window.alert("Sign Up Successful");
-    location.href = "signin.html";
+    window.alert("Sign Up Successful")
+    location.href = "signin.html"
   } else {
     alert("Login failed");
   }
 }
 
-function login(e) {
-  e.preventDefault();
+function login() {
   const userName = document.getElementById("loginUname").value;
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
@@ -52,7 +50,7 @@ function login(e) {
     storedUser.password === password
   ) {
     alert("LOGIN SUCCESSFUL");
-    // location.href = "dashboard.html"
+    location.href = "dashboard.html"
   } else {
     document.getElementById("error").textContent =
       "Fill in your details correctly";
