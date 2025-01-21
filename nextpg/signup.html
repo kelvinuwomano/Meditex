@@ -71,6 +71,29 @@
         <button type="submit" onclick="signUp()">SIGNUP</button>
        </form>
     </div>
-    <script src="/index.js"></script>
+    <script>
+      const menuBar = document.getElementById("toggleMenu");
+const navMenu = document.getElementById("navMenu");
+const search = document.getElementById("search");
+menuBar.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+  search.style.toggle("show");
+});
+function signUp() {
+
+  const userName = document.getElementById("signupUname").value;
+  const email = document.getElementById("signupEmail").value;
+  const password = document.getElementById("signupPass").value;
+
+  const userData = { userName, email, password };
+  localStorage.setItem("user", JSON.stringify(userData));
+  if (userData) {
+    window.alert("Sign Up Successful")
+    location.href = "signin.html"
+  } else {
+    alert("Login failed");
+  }
+}
+    </script>
 </body>
 </html>

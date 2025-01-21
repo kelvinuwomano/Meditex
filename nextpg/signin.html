@@ -43,7 +43,6 @@
     <div class="signin">
         <div class="overlay"></div>
         <form 
-        action="dashboard.html"
         >
         
             <h1>LOGIN</h1>
@@ -66,7 +65,35 @@
             <p class="signup">Don't have an account? <a href="/nextpg/signup.html">Sign up</a></p>
         </form>
     </div>
-    <script src="/index.js">
+    <script>
+      function login() {
+  const userName = document.getElementById("loginUname").value;
+  const email = document.getElementById("loginEmail").value;
+  const password = document.getElementById("loginPassword").value;
+
+  const storedUser = JSON.parse(localStorage.getItem("user"));
+
+  if (
+    storedUser &&
+    storedUser.userName === userName &&
+    storedUser.email === email &&
+    storedUser.password === password
+  ) {
+    alert("LOGIN SUCCESSFUL");
+    location.href = "dashboard.html"
+  } else {
+    document.getElementById("error").textContent =
+      "Fill in your details correctly";
+  }
+  window.location.href = "book.html"
+}
+const menuBar = document.getElementById("toggleMenu");
+const navMenu = document.getElementById("navMenu");
+const search = document.getElementById("search");
+menuBar.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+  search.style.toggle("show");
+});
     </script>
 </body>
 </html>

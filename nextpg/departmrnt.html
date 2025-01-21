@@ -198,6 +198,14 @@
             </div>
         </div>
     </footer>
-    <script src="/index.js"></script>
+    <script>
+        const menuBar = document.getElementById("toggleMenu");
+        const navMenu = document.getElementById("navMenu");
+        const search = document.getElementById("search");
+        menuBar.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        search.style.toggle("show");
+        });
+    </script>
 </body>
 </html>

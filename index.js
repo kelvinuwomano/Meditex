@@ -57,20 +57,3 @@ function login() {
   }
 }
 
-function bookAppointment(e) {
-  e.preventDefault();
-
-  const firstName = document.getElementById("firstName").value;
-  const lastName = document.getElementById("lastName").value;
-//   const fullName = firstName + "" + lastName;
-  const bookingEmail = document.getElementById("bookingEmail").value;
-  const phoneInput = document.getElementById("phoneInput").value;
-  const date = document.getElementById("date").value;
-  const reason = document.getElementById("reason").value;
-
-  const allBookingInfo = { firstName, lastName, bookingEmail, phoneInput, date, reason };
-
-  localStorage.setItem("bookInfo", JSON.stringify(allBookingInfo));
-  // localStorage.setItem("bookInfo", JSON.stringify(allBookingInfo))
-  console.log(localStorage.getItem(parse("allBookingInfo")));
-}
