@@ -1013,3 +1013,15 @@ table .mobile {
     background: #000;
   } */
 }
+@media screen and (max-width: 575px) {
+  .aside{
+    display: none;
+  }
+  .main {
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+}
