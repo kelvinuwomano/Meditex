@@ -46,7 +46,7 @@
                     <li>Main</li>
                     <li>
                         <span class="icons">
-                            <i class='bx bxs-dashboard'></i>                        </span>
+                            <i class='bx bxs-dashboard'></i>      
                         <span class="titleName">Dashboard</span>
                     </li>
                     <li>
@@ -98,10 +98,7 @@
         <div class="dashBoardTable">
             <div class="appDashb">
                 <div class="searchHere">
-                    <h3>Appointment</h3>
-                    <input type="text" placeholder="Search here">
-                    <i class='bx bx-plus'></i>
-                    <a href="/nextpg/dashboard.html"><i class='bx bx-refresh' ></i></a>
+                    <h3>Your Appointment</h3>
                 </div>
                 <div class="files">
                     <i class='bx bxs-file-pdf'></i>
@@ -113,120 +110,22 @@
             <table>
                 <thead>
                     <tr>
-                        <td><input type="checkbox"></td>
                         <td>Name</td>
-                        <td>Consulting Doctors</td>
+                        <td>Allergy</td>
                         <td>Treatment</td>
                         <td>Mobile</td>
                         <td>Email</td>
-                        <td>Date</td>
-                        <td>Time</td>
+                        <td>Date & Time</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-01.jpeg" alt="">
-                            <p>Andre Lalema</p>
-                        </td>
-                        <td>Dr Bernardo .J.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>andre@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-02.jpeg" alt="">
-                            <p>Pedro Scott</p>
-                        </td>
-                        <td>Dr Issac .A.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>scott88@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-03.jpeg" alt="">
-                            <p>David Skyla</p>
-                        </td>
-                        <td>Dr Kelvin .O.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>sky333@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-04.jpeg" alt="">
-                            <p>Jeffery Will</p>
-                        </td>
-                        <td>Dr Mike .D.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>jeff22@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-05.jpeg" alt="">
-                            <p>Dayvon Ben</p>
-                        </td>
-                        <td>Dr James .V.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>dayben@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-03.jpeg" alt="">
-                            <p>Durk Banks</p>
-                        </td>
-                        <td>Dr Martha .F.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>banks@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-01.jpeg" alt="">
-                            <p>Paul Campbell</p>
-                        </td>
-                        <td>Dr Patrick .C.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>paul@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td class="nameImg">
-                            <img src="/dashboardImg/avatar-04.jpeg" alt="">
-                            <p>Micheal Harrisson</p>
-                        </td>
-                        <td>Dr Evelyn .T.</td>
-                        <td>Infertility</td>
-                        <td class="mobile">+123467890</td>
-                        <td>michel@gmail.com</td>
-                        <td>01.01.2025</td>
-                        <td>7:30 AM</td>
+                        <td id="fullName"></td>
+                        <td id="allergy"></td>
+                        <td id="treatment"></td>
+                        <td id="mobileNumber"></td>
+                        <td id="email"></td>
+                        <td id="dateTime"></td>
                     </tr>
                 </tbody>
             </table>
@@ -235,6 +134,20 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="/index.js"></script>
+    <script>
+        const fname = localStorage.getItem("full-name");
+        const email = localStorage.getItem("email");
+        const allergy = localStorage.getItem("allergy");
+        const mobile = localStorage.getItem("mobile");
+        const treatment = localStorage.getItem("treatment");
+        const dateTime = localStorage.getItem("date");
+
+        document.getElementById("fullName").textContent = fname;
+        document.getElementById("allergy").textContent = allergy;
+        document.getElementById("email").textContent = email;
+        document.getElementById("dateTime").textContent = dateTime;
+        document.getElementById("treatment").textContent = treatment;
+        document.getElementById("mobileNumber").textContent = mobile;
+    </script>
 </body>
 </html>
